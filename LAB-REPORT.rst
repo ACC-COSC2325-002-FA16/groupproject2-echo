@@ -2,7 +2,7 @@
 Lab report for group 'echo'
 ===========================
 
-Echo:    
+:Echo:    
           Natalie Garza
 
           Derrick Jewell
