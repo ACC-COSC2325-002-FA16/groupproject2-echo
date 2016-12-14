@@ -8,18 +8,19 @@
 
         ; start function definitions
 delay:
-        ldi         r16, 100
+        ; this delay is set up the same way as the one from class, just faster
+        ldi         r16, 100        
 6:
         ldi         r17, 100
 7:
         ldi         r18, 100
 8:
         dec         r18
-        brne        8b
+        brne        8b      ; this checks to see if r18 is equal to 0, if not, it jumps back to the dec r18 command. If it is zero, it moves on
         dec         r17
-        brne        7b
+        brne        7b      ; this checks to see if r17 == 0. If no, jumps up to loading r18 and goes through everything until r17 == 0.
         dec         r16
-        brne        6b
+        brne        6b      ; this checks
         ret
 
 lvl_4:

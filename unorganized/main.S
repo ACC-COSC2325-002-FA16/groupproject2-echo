@@ -22,21 +22,21 @@ main:
         ; trying out first function
         ; Calling functions from func.S
 
-        call        T_to_B
-        call        B_to_T
-        call        R_to_L
+        call        T_to_B      ; the function descriptions for the first 4 functions
+        call        B_to_T      ; can be found in the func.S file
+        call        R_to_L      
         call        L_to_R
         ; loop is done -- continue
         ; start loop for pulseing cube
-        ldi         r27, 5
-2:      call        toggle_cube
+        ldi         r27, 5          ; makes the cube pulse for 5 times
+2:      call        toggle_cube     ; toggle_cube is described in the func.S file
         ; dec r27
         dec         r27
         ; check to see if 0, branch back if not
         brne        2b
 
-        call        shooting_stars
-        call        delay
+        call        shooting_stars  ; this function is described in the stars.S file
+        call        delay           ; this delay is a function from the func.S
         ; End of show
         rjmp        1b
 
