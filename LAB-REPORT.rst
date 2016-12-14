@@ -17,11 +17,17 @@ Lab report for group 'echo'
 
 :Table of Contents:
                     Introduction
+
                     Microcontroller Platform
+
                     The Device
+
                     Development Tools
+
                     Experiment
+
                     Conclusions
+
                     Contributions
 
 Introduction
