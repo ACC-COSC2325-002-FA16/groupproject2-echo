@@ -48,9 +48,24 @@ Development Tools
 
 Experiment
 ----------
+    The point of the experiment was to learn how assembly code talks to hardware on a level us as humans don't see. To do this we set up a 4x4x4 dimensional array of LED lights and we tried to talk to it through AVR assembly. The main part of getting the Cube working was to figure out how we could tell the Arduino to send a voltage to a specific pin at a specific time. Once we figured that bit out we were able to freely make any design we wanted. 
+
+    The microcontroller is connected to the device through 20 wires all connecting to either the analog pins or digital pins. We had to keep track of what was connected to what so that our light shows would come out the way we wanted them to. 
+    
+Conclusion
+----------
+    Talking to each LED in C code is complicated enough, but to be able to talk to an LED in the lowest level language proved to be even harder. 
 
 
+Contributions
+-------------
+Greg W.     : Provided hardware, wrote majority of code, and construction
 
+Rick J.     : Code debugging and construction
+
+Travis N.   : Code debugging and construction
+
+Natalie G.  : Code debugging, construction, and physics lab
 
 
 
