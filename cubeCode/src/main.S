@@ -2,7 +2,9 @@
 ;   main.S
 ;======================
 
-#include "config.inc"
+#include "../lib/config.inc"
+#include "../lib/func.S"
+
 
         .section    .text
         .global     main

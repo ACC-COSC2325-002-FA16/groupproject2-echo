@@ -17,5 +17,5 @@ PORT	= /dev/ttyUSB0
 
 # uncomment one of thes elines
 #MAKE_BASE = ../
-MAKE_BASE = /usr/local/
+MAKE_BASE = ../
 include $(MAKE_BASE)include/AVRMakefile.mak
