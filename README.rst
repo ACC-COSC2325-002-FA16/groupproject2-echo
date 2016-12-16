@@ -4,15 +4,22 @@
 
 Directory
 ---------
--cubeCode
++cubeCode
     +Makefile
     +src
-        *Makefile
-        *main.S
+        +Makefile
+        +main.S
     +lib
-        *README.rst
-        *beat.S
-        *config.inc
-        *func.S
-        *stars.S
--LAB_REPORT.rst
+        +README.rst
+        +beat.S
+        +config.inc
+        +func.S
+        +stars.S
+    +include
+        +AVRBuildRules.mak
+        +AVRMakeLinux.mak
+        +AVRMakeMac.mak 
+        +AVRMakeWin.mak 
+        +AVRMakefile.mak    
+        +AVRSpecialRegs.inc 
++LAB_REPORT.rst
