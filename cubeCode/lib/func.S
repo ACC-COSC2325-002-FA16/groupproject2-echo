@@ -172,6 +172,7 @@ pulse:
         ret
 
 all_on:
+        ; all_on turns on all 64 LED's in the cube.
         ldi     r23, 0b001111
         ldi     r24, 0b00000000
         ldi     r25, 0b000000
@@ -180,10 +181,13 @@ all_on:
         out     B_PORT, r25
         ret
 all_off:
+        ; pretty easy to guess what this function does, turns off all 64 LEDs in the cube.
         ldi     r23, 0b000000
         out     C_PORT, r23
         ret
+
 toggle_cube:
+        ; this function calls all on and all off with the pulse delay to quickly turn on and off the LEDs.
         call    all_on
         call    pulse
         call    all_off
